@@ -61,8 +61,8 @@ const Login = () => {
           </p>
         </div>
         <div className="mt-5 text-xs text-center text-gray-400 space-y-0.5">
-          <p>Demo citizen: citizen1@example.com / password123</p>
-          <p>Demo officer: officer@portal.gov / password123</p>
+          <p>Demo citizen: citizen@gmail.com / password123456</p>
+          <p>Demo officer: officer@gmail.com / password123456</p>
         </div>
       </div>
     </div>
