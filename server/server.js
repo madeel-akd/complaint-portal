@@ -19,6 +19,7 @@ app.get('/api/health', (req, res) => res.json({ success: true, message: 'Citizen
 app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/complaints', require('./routes/complaintRoutes'));
 app.use('/api/officer', require('./routes/statsRoutes'));
+app.use('/api/ai', require('./routes/statsRoutes'));
 
 app.use(notFound);
 app.use(errorHandler);
