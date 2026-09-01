@@ -9,7 +9,13 @@ const { notFound, errorHandler } = require('./middleware/errorMiddleware');
 connectDB();
 
 const app = express();
-app.use(cors({ origin: process.env.CLIENT_URL || '*', credentials: true }));
+const cors = require('cors');
+
+app.use(cors({
+  origin: process.env.CLIENT_URL || 'https://complaint-portal.madeel-akd.workers.dev',
+  credentials: true
+}));
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 if (process.env.NODE_ENV !== 'production') app.use(morgan('dev'));
